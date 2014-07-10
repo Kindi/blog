@@ -7,6 +7,7 @@ gem 'bcrypt'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
+  gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'guard-livereload'
   gem 'spork-rails', github: 'sporkrb/spork-rails' # rubygems version not rails 4 compatible
