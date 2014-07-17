@@ -1,0 +1,843 @@
+/* 
+    ######################################
+    # Wise Words Template - Template.css #
+    ######################################
+
+    Table of contents
+    *****************
+    1. Content
+    2. Layout
+    3. Navigation
+        - 3.a Standard navigation
+        - 3.b Tinynav.js
+    4. Forms
+    5. Elements
+    6. Zones, Widgets and Special Stuff
+        - 6.a General
+        - 6.b Blog
+        - 6.c 404
+        - 6.d Search
+        - 6.e Tags
+        - 6.f Login
+        - 6.g Comments
+               - 6.g.i  Display
+               - 6.g.ii Form
+        - 6.h Zones
+        - 6.i Forms
+    7. Misc
+
+*/
+
+
+
+/***** 1. Content *****/
+
+a {
+    /*color: #9b7188;*/
+    text-decoration: underline !important;
+}
+
+a:hover, a:focus {
+    color: inherit !important;
+    text-decoration: underline !important;
+}
+
+body{
+	/*background-color:#eeeee6;*/
+	font-family: 'PT Serif', serif !important;
+	font-size:18px !important;
+	line-height: 30px !important;
+}
+
+blockquote {
+  border-left: 5px solid #abb2ba !important;
+}
+
+blockquote small {
+  line-height: 30px !important;
+}
+
+body, legend {
+    /*color:#494e55;*/
+}
+
+code {
+  color: inherit !important;
+  padding: 6px 6px !important;
+}
+
+h1 {
+	/*color:#9b7188;*/
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 34px !important;
+	font-weight: 300 !important;
+	margin-bottom: 30px !important;
+	text-align: center !important;
+	text-transform: uppercase !important;
+}
+
+h1 a, h1 a:hover, h1 a:focus {
+    text-decoration:none !important;
+}
+
+h4 {
+    margin-top:20px !important;
+}
+
+hr {
+	margin-top:12px !important;
+	border-top:none !important;
+	border-bottom:1px solid #b2b8c1 !important;
+}
+
+li {
+    line-height: 30px !important;
+}
+
+ol, ul {
+    margin-bottom:30px !important;
+}
+
+p {
+    margin-bottom:30px !important;
+}
+
+
+
+
+
+
+
+/***** 2. Layout *****/
+
+body {
+	padding-top: 60px !important;
+	padding-bottom: 60px !important;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+
+  body {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+
+}
+
+.main-content {
+	margin-top:90px !important;
+  margin-bottom:70px !important;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+    .main-content {
+      margin-top:40px !important;
+      margin-bottom:30px !important;
+    }
+ }
+
+
+.seperator {
+  background-image:url('../img/threedots.png'); 
+  height:6px !important;
+    margin:100px auto; /*top  bottom left right*/
+  width:35px !important;
+}
+
+
+
+
+/***** 3. Navigation *****/
+
+
+/***** 3.a Standard navigation *****/
+
+.dropdown-menu {
+  /*background-color: #e2e3c8;*/
+  border: none !important;
+  display: none !important;
+  float: left !important;
+  left: 0 !important;
+  list-style: none !important;
+  margin: 16px 0 0 !important;
+  min-width: 160px !important;
+  padding: 5px 0 !important;
+  position: absolute !important;
+  top: 100% !important;
+  z-index: 1000 !important;
+}
+
+.dropdown-menu > li
+{
+	margin-top:5px !important;
+	margin-bottom:5px !important;
+}
+
+.dropdown-menu > li > a
+{
+  font-size: 16px !important;
+  font-weight: 300 !important;
+	text-align: center !important;
+  text-transform: none !important;	
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a,
+.dropdown-menu > .active > a:hover {
+    /*background-color: #d8d9bf;*/
+    background-image: none !important;
+    color: black !important;
+    filter: none !important;
+    text-decoration: none !important;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus {
+    color: inherit !important;
+    background-color: inherit !important;
+    background-image: inherit !important;
+    background-repeat: inherit !important;
+    filter: inherit !important;
+    outline: inherit !important;
+    text-decoration: none !important;
+}
+
+.nav {
+    margin-bottom: 0px !important;
+}
+
+.nav > li > a:hover, 
+.nav > li > a:focus{
+	background-color:inherit;
+}
+
+.nav > li.dropdown.open.active > a:hover,
+.nav > li.dropdown.open.active > a:focus {
+    background-color: inherit !important;
+    border-color: inherit !important;
+    color: inherit !important;
+} 
+
+.ww-nav {
+	padding-top:6px !important;
+}
+
+.ww-nav a {
+	/*color:#494e55;*/
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 20px !important;
+	font-weight:300 !important;
+	line-height: 14px !important;
+	margin-left: 0px !important;
+	margin-right: 2px !important;
+	padding-right: 0px !important;
+	text-transform: uppercase !important;
+	text-decoration: none !important;
+}
+
+.ww-nav a:hover {
+	/*color:#9b7188;*/
+}
+
+.ww-nav > li {
+	float:left !important;
+	margin-left:15px !important;
+}
+
+.ww-nav > li > a {
+    padding:25px !important;
+}
+
+.ww-nav > li.last a {
+    padding-right:0px !important;
+}
+
+.zone-navigation {
+    display: inline !important;
+}
+
+
+
+
+
+
+
+
+/***** 3.b Tinynav.js *****/
+
+/* Desktop */
+.tinynav { 
+    /*background-color:#f6f6ed; */
+    display: none !important; 
+    height:40px !important; 
+    margin-top:25px !important;
+    width:100% !important; 
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .tinynav { display: inline; }
+}   
+
+
+
+
+
+
+/***** 4. Forms *****/
+
+button
+{
+	/*background-color: #9b7188;*/
+	border:none !important;
+	-webkit-border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	border-radius: 5px !important;
+	/*color:#eeeee6;*/
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 17px !important;
+  height:55px !important;
+  margin-top:15px !important;
+  padding-left:30px !important;
+  padding-right:30px !important;
+	text-transform: uppercase !important;
+    
+}
+
+button:hover
+{
+	/* background-color: #83536d; */
+}
+
+button.button-icon{
+  padding-left: 12px !important;
+  padding-right: 1px !important;
+}
+
+.contact-form{
+  /*margin-top:60px;*/
+}
+
+input.text, input[type=text], input[type=password] {
+	height:35px !important;
+	width:100% !important;
+}
+
+label {
+	font-size:18px !important;
+	margin-bottom:20px !important;
+	margin-top:35px !important;
+	text-align: left !important;
+}
+
+legend {
+	border-bottom: none !important;
+}
+
+textarea {
+	width:100% !important;
+}
+
+fieldset {
+    text-align:center !important;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  /*background-color: #f6f6ed;*/
+  /*border: 1px solid #b2b8c1;*/
+/*  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+*/}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  /*border-color: rgba(191, 167, 177, 0.8);*/
+  outline: 0;
+  outline: thin dotted \9;
+  /* IE6-9 */
+/*  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(155, 113, 136, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(155, 113, 136, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(155, 113, 136, 0.6);
+*/}
+
+
+
+
+
+
+/***** 5. Elements *****/
+
+a.button-link {
+  /*height:55px;*/
+  /*width:61px;*/
+  margin-top:15px !important;
+  padding:15px 30px 15px 30px !important;
+  display: inline-block !important;
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+  /*color:#eeeee6;*/
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 17px !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+}
+
+a.button-link.foricon{
+  padding:3px 1px 3px 13px !important;
+}
+
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  /*background-color: #f6f6ed;*/
+  text-decoration: none;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  text-decoration: none;
+}
+
+.nav-tabs > li > a {
+  /*color:#494e55;*/
+  text-decoration: none;
+}
+
+.tab-content > .tab-pane {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+    /*background-color: #f6f6ed;*/
+}
+
+.table-hover tbody tr:hover > td,
+.table-hover tbody tr:hover > th {
+    /*background-color: #e2dbd8;*/
+}
+
+.pagination{
+  font-family: 'Open Sans', sans-serif !important;
+  font-size:16px !important;
+  text-align: center !important;
+  margin-top: 50px !important;
+}
+
+.pagination ul > li > a,
+.pagination ul > li > col {
+  background-color:  #f6f6ed !important;
+}
+
+
+
+
+/***** 6. Zones and Widgets*****/
+
+
+
+
+/***** 6.a General *****/
+
+.copyright {
+	font-size:12px !important;
+	text-align: left !important;
+}
+
+h1.page-title {
+    font-size:20px !important;
+    font-family:'Open Sans' !important; /*Condensed*/
+    text-transform:none !important;
+}
+
+.zone-content h1 {
+    margin-bottom:50px !important;
+}
+
+
+
+/***** 6.b Blog *****/
+
+.archives ul {
+    list-style: none !important;
+    text-align: center !important;
+}
+    
+.blog-post {
+    line-height:30px !important;
+}
+
+.blog-pagination {
+  margin-top:80px !important;
+}
+
+.blog-pagination .newer {
+  float:left !important;
+}
+
+.blog-pagination .older{
+  float:right !important;
+}
+
+.published {
+	font-size:16px !important; 
+	text-align: center !important;
+}
+
+ul.blog-posts {
+    list-style:none !important;
+    margin:0 !important;
+}
+
+ul.blog-posts li {
+    background-image:url('../img/threedots.png'); 
+    background-position:bottom center !important;
+    background-repeat:no-repeat !important;
+    margin-bottom:60px !important;
+    padding-bottom:60px !important;
+}
+
+ul.blog-posts li.last {
+    background-image:none !important;
+    padding-bottom:0px !important;
+}
+
+.widget-blogcategories ul,
+.widget-blogarchives ul
+{
+  list-style: none !important;
+  text-align: center !important;
+  margin:0 !important;
+}
+
+.widget-blogcategories a,
+.widget-blogcategories a:link,
+.widget-blogarchives a,
+.widget-blogarchives a:link
+
+{
+  color:inherit !important;
+  text-decoration: none !important;
+}
+
+.widget-blogcategories a:hover,
+.widget-blogarchives a:hover
+{
+  /*color:#9b7188;*/
+}
+
+
+/***** 6.c 404 *****/
+
+
+.notfound-title {
+    font-size:75px !important;
+}
+
+.notfound-message {
+ text-align:center !important;   
+}
+
+
+
+
+
+
+
+/***** 6.d Search *****/
+
+.widget .search-form {
+	text-align: center !important;
+}
+
+.widget .search-form input#q {
+	height:35px !important;
+	margin-bottom:0px !important;
+	width:155px !important;
+}
+
+.widget .search-form button {
+	height:45px !important;
+    margin-top:0px !important;
+    padding:0px !important;
+	width: 45px !important;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { .widget .search-form input#q {width:205px;} }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { .widget .search-form input#q {width:101px;}  }
+
+
+
+
+
+/***** 6.e Tags *****/
+
+ul.tagcloud {
+	list-style: none !important;
+	overflow:auto !important; /*for clearing the float */
+}
+
+ul.tagcloud li {
+	float:left !important;
+	height:36px !important;
+	margin-right:5px !important;
+}
+
+ul.tagcloud a {
+	color:inherit !important;
+	text-decoration: none !important;
+}
+
+ul.tagcloud a:hover {
+	/*color:#9b7188*/
+}
+
+li.tagCloud-1{font-size:12px !important;}
+li.tagCloud-2{font-size:18px !important;}
+li.tagCloud-3{font-size:24px !important;}
+li.tagCloud-4{font-size:30px !important;}
+li.tagCloud-5{font-size:36px !important;}
+
+p.tags{
+    margin-bottom:0px !important;
+}
+
+
+
+
+
+
+/***** 6.f Login *****/
+
+.login-form input#remember-me {
+    margin-bottom: 5px !important;
+}
+
+fieldset.login-form {
+    margin-top:40px !important;
+    margin-bottom:40px !important;
+    text-align: center !important;
+}
+
+.login-form ol {
+    list-style:none !important;
+    margin-left:0 !important;
+}
+
+
+
+
+
+
+
+/***** 6.g Comments *****/
+
+/***** 6.g.i Display *****/
+
+.comment a 
+{
+	color:inherit !important;
+	text-decoration: none !important;
+}
+
+article.comment h4 {
+	font-weight: normal !important;
+	margin-bottom:15px !important;
+
+}
+
+#comments {
+    background-image: url('../img/threedots.png');
+    background-position:center top !important;
+    background-repeat:no-repeat !important;
+    margin-top: 100px !important;
+    padding-top: 100px !important;
+}
+
+#comments article {
+	margin-top:100px !important;
+}
+
+#comments .text
+{
+	font-size: 16px !important;
+	line-height: 30px !important;
+	text-align: left !important;
+}
+
+#comments .when
+{
+	font-size: 14px !important;
+}
+
+.comments {
+	text-align: center !important;
+}
+
+
+ul.comments {
+	list-style: none !important;
+	margin-left:0 !important;
+}
+
+
+
+
+/***** 6.g.ii Form *****/
+
+.comment-form {
+	margin-top:125px !important;
+	margin-bottom: 125px !important;
+}
+
+.comment-form button.primaryAction {
+    height:55px !important;
+    margin-top:50px !important;
+    margin-left: 10px !important;
+    width:300px !important;
+ }
+
+@media (max-width: 767px) { 
+	.comment-form button.primaryAction
+	{
+		width:200px !important;
+	}
+ }
+
+.comment-form legend#add-comment, h2.comment-count {
+	/*color:#9b7188;*/
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 30px !important;
+	font-weight: 300 !important;
+	margin-bottom: 30px !important;
+	text-align: center !important;
+	text-transform: uppercase !important;	
+}
+
+fieldset.what {
+	text-align: center !important;
+}
+
+
+
+/***** 6.h Zones *****/
+
+
+
+aside.aside-column article.widget {
+	/*border-top:1px solid #b2b8c1;*/
+	margin-bottom:50px !important;
+	padding-top:30px !important;
+}
+
+aside.aside-column article.widget:first-child {
+	border-top: none !important;
+	padding-top: 0 !important;
+}
+
+aside.aside-column article.widget header h1 {
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: 30px !important;
+	font-weight:300 !important;
+}
+
+.triple article.widget header h1,
+.quad article.widget header h1 {
+	font-family: 'Open Sans', sans-serif !important;	 /* Condensed */
+	font-size: 21px !important;
+	margin-bottom:13px !important;
+	text-transform: none !important;
+}
+
+.triple article.widget,
+.quad article.widget {
+	font-size:16px !important;
+	margin-top:0 !important;
+	text-align: center !important;
+}
+
+.triple-row {
+	margin-bottom:30px !important;
+}
+
+
+
+
+
+
+/***** 7. Misc *****/
+
+.glyphicons-icon {
+  background-image: url(../img/glyphicons/glyphicons-darkgrey.svg) !important;
+}
+
+.halflings-icon {
+  background-image: url(../img/glyphicons/glyphicons_halflings-darkgrey.svg) !important;
+}
+
+#logo {
+  margin: 2px 0  0 10px !important; 
+  height:63px !important; 
+  width:324px !important; 
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+  #logo {
+    height:47.25px !important;
+    width: 243px !important;
+  }
+ }
+
+.glyphicons-showoff i {
+  margin-right: 6px !important;
+  margin-left: 5px !important;
+}
+
+.button-showoff  {
+  text-align: center !important;
+  margin-bottom:30px !important;
+}

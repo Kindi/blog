@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-	<%= render 'layouts/fonts'%>
-    <title><%= full_title(yield(:title))%></title>
-    <%= stylesheet_link_tag    "application",
- 								media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
-	<%= render 'layouts/shim'%>
-  </head>
-  <body>
-    <%= render 'layouts/header'%>
-	<div class="container">			
-	  <%= yield %>
-	  <%= render 'layouts/footer'%>
-	</div>	
-  </body>
+<%= stylesheet_link_tag    "application",
+							media: "all", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<%= csrf_meta_tags %>
+<%= render 'layouts/shim' %>
+<head>
+    <meta charset="UTF-8">
+    <title><%= full_title(yield(:title)) %></title>
+	<%= render 'layouts/stylelinks' %>
+</head>
+<body>
+
+<div class="container">
+	<%= render 'layouts/header'%>
+
+<%= yield %>
+
+</div>  <!-- End Container -->
+
+<%= render 'layouts/scripts'%>
+
+</body>
 </html>
