@@ -93,10 +93,10 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  height: 1px !important;
-  -webkit-box-sizing: content-box !important;
-     -moz-box-sizing: content-box !important;
-          box-sizing: content-box !important;
+  height: 1px ;
+  -webkit-box-sizing: content-box ;
+     -moz-box-sizing: content-box ;
+          box-sizing: content-box ;
 }
 pre {
   overflow: auto;
