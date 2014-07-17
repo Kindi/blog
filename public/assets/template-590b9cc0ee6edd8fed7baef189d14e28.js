@@ -1,0 +1,1 @@
+$(function(){$("#nav").tinyNav({header:"-- Navigation --"})}),document.onreadystatechange=function(){"complete"===document.readyState&&$("ul.ww-nav ul.dropdown-menu").each(function(){parentWidth=$(this).parent().innerWidth(),menuWidth=$(this).innerWidth(),margin=parentWidth/2-menuWidth/2,margin+="px",$(this).css("margin-left",margin)})};
