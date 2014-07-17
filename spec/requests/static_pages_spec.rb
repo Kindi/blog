@@ -5,7 +5,7 @@ describe "Static pages" do
   let(:base_title) { "Houssam Yassin"}
   
   describe "Home page" do
-    before { visit root_path }
+    before { visit '/static_pages/home' }
     
     it "should have the content 'blog'" do
       expect(page).to have_content('blog')
@@ -17,7 +17,7 @@ describe "Static pages" do
   end
   
   describe "About page" do
-    before { visit about_path }
+    before { visit '/static_pages/about' }
     
     it "should have the content 'about'" do
       expect(page).to have_content('about')
@@ -29,7 +29,7 @@ describe "Static pages" do
   end
   
   describe "Blog page" do
-    before { visit blog_path }
+    before { visit '/static_pages/blog' }
     
     it "should have the content 'blog'" do
       expect(page).to have_content('blog')
@@ -41,7 +41,7 @@ describe "Static pages" do
   end
   
   describe "Projects page" do
-    before { visit projects_path }
+    before { visit '/static_pages/projects'}
     
     it "should have the content 'Projects'" do
       expect(page).to have_content('projects')
