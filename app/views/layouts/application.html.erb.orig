@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> debug-theme
 <%= render 'layouts/shim'%>
 <head>
 	<title><%= full_title(yield(:title))%></title>
@@ -14,7 +11,6 @@
 	<%= render 'layouts/javascript_includes'%>
 	<%= render 'layouts/shim2'%>
 	
-<<<<<<< HEAD
 =======
 =======
 >>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
@@ -31,23 +27,17 @@
 >>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
 =======
 >>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
-=======
->>>>>>> debug-theme
 </head>
 <body>
 
 <div class="container">
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 	
 =======
 >>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
 =======
 >>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
-=======
-	
->>>>>>> debug-theme
 	<%= render 'layouts/header'%>
 
 <%= yield %>
@@ -56,9 +46,6 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> debug-theme
 <%= render 'layouts/page_end_scripts'%>
 
 </body>

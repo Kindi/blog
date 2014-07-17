@@ -93,10 +93,23 @@ figure {
   margin: 1em 40px;
 }
 hr {
+<<<<<<< HEAD
+<<<<<<< HEAD
   height: 0;
   -webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
+=======
+=======
+>>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
+  height: 1px ;
+  -webkit-box-sizing: content-box ;
+     -moz-box-sizing: content-box ;
+          box-sizing: content-box ;
+<<<<<<< HEAD
+>>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
+=======
+>>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
 }
 pre {
   overflow: auto;
