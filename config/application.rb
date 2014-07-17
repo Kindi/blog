@@ -26,7 +26,7 @@ module Blog
     # config.i18n.default_locale = :de
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     
-    
+    config.serve_static_assets = true
     config.assets.initialize_on_precompile = false
     
   end
