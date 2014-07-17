@@ -15,7 +15,10 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
  * ======================================================================== */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
 =======
 >>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
 +function ($) {

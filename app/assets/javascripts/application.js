@@ -18,7 +18,11 @@
 //= require bootstrap.min
 //= require_tree .
 <<<<<<< HEAD
+<<<<<<< HEAD
 //= require bootstrap.min
+=======
+
+>>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
 =======
 
 >>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
