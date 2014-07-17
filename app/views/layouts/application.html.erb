@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-	<%= render 'layouts/fonts'%>
-    <title><%= full_title(yield(:title))%></title>
-    <%= stylesheet_link_tag    "application",
- 								media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<<<<<<< HEAD
+<%= render 'layouts/shim'%>
+<head>
+	<title><%= full_title(yield(:title))%></title>
     <%= csrf_meta_tags %>
-	<%= render 'layouts/shim'%>
-  </head>
-  <body>
-    <%= render 'layouts/header'%>
-	<div class="container">			
-	  <%= yield %>
-	  <%= render 'layouts/footer'%>
-	</div>	
-  </body>
+
+    <%= render 'layouts/fonts'%>
+	<%= render 'layouts/style_links'%>
+	<%= render 'layouts/javascript_includes'%>
+	<%= render 'layouts/shim2'%>
+	
+=======
+<%= stylesheet_link_tag    "application",
+							media: "all", "data-turbolinks-track" => true %>
+<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+<%= csrf_meta_tags %>
+<%= render 'layouts/shim' %>
+<head>
+    <meta charset="UTF-8">
+    <title><%= full_title(yield(:title)) %></title>
+	<%= render 'layouts/stylelinks' %>
+>>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
+</head>
+<body>
+
+<div class="container">
+<<<<<<< HEAD
+	
+=======
+>>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
+	<%= render 'layouts/header'%>
+
+<%= yield %>
+
+</div>  <!-- End Container -->
+
+<<<<<<< HEAD
+<%= render 'layouts/page_end_scripts'%>
+
+</body>
 </html>
+=======
+<%= render 'layouts/scripts'%>
+
+</body>
+</html>
+>>>>>>> f5e8db45875bb0ddf80c8d6846d3106ae9aa7a6f
