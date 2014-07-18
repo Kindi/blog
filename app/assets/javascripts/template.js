@@ -1,5 +1,4 @@
  //Enabling drop down navigation for mobile screen sizes
-alert("5");
 
 $(function () {
      $("#nav").tinyNav({ header: '-- Navigation --' });
