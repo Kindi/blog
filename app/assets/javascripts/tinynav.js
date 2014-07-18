@@ -1,4 +1,6 @@
 /*! http://tinynav.viljamis.com v1.1 by @viljamis */
+alert("6");
+
 (function ($, window, i) {
   $.fn.tinyNav = function (options) {
 

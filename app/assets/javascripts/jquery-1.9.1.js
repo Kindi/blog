@@ -11,6 +11,9 @@
  *
  * Date: 2013-2-4
  */
+
+alert("1");
+
 (function( window, undefined ) {
 
 // Can't do this because several apps including ASP.NET trace
