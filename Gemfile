@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.0.5'
+gem 'pg'
 gem 'bootstrap-sass'
 gem 'sprockets', '2.11.0'
 gem 'bcrypt'
 
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'guard-livereload'
@@ -38,7 +38,6 @@ group :doc do
 end
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
 end
 
