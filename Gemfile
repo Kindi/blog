@@ -5,6 +5,7 @@ gem 'pg'
 gem 'bootstrap-sass'
 gem 'sprockets', '2.11.0'
 gem 'bcrypt'
+gem 'faker'
 
 group :development, :test do
   gem 'rspec-rails'

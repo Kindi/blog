@@ -1,4 +1,5 @@
 module ApplicationHelper
+  
   def full_title(page_title)
     base_title = "Houssam Yassin"
     if page_title.empty?

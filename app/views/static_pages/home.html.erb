@@ -1,17 +1,9 @@
+<% require 'nokogiri' %>
 
-<div>
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
-				<h1>Sample Post</h1>
-				<p>		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fermentum quam nec elit feugiat, ut sodales dui varius. Mauris in vehicula lacus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac tortor turpis. Mauris vitae rhoncus nibh. Morbi interdum fringilla orci, non suscipit lectus sagittis ut. Suspendisse turpis quam, consequat quis semper ac, fermentum et nibh. Duis dignissim suscipit nibh in euismod.
-				</p>
+<% html_doc = Nokogiri::HTML("<html><body><h1>Mr. Belvedere Fan Club</h1></body></html>")  do |config|%>
+	<% config.strict %>
+<% end %>
+<%= html_doc %>
 
-			<p>	Suspendisse potenti. Proin varius molestie justo ac congue. Curabitur bibendum gravida accumsan. Sed in sagittis tellus. Nullam vitae mi vel nibh vehicula aliquet. Suspendisse adipiscing velit ut metus commodo sollicitudin. Aenean ac lacus vel ante malesuada porta. Sed gravida ante eget velit auctor, a vulputate tellus molestie. Vivamus aliquam mi eget ullamcorper tempor. Praesent a lectus neque. Integer nec nisi ultrices, pulvinar sem a, vestibulum tortor.
-			</p>
-			<p>	Quisque sed egestas risus. Nam dignissim metus mi, sit amet dignissim sem aliquet at. Aliquam ultricies interdum nunc et volutpat. Cras sit amet dolor lorem. Suspendisse lobortis sapien at pharetra hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis nunc metus. Nulla suscipit lacus lectus, vel porta arcu cursus et. Cras tempus blandit neque, vitae volutpat lorem commodo volutpat.
-			</p>
-			</div>
-		</div>
-</div>
 
 
