@@ -6,6 +6,7 @@ class StaticPagesController < ApplicationController
   end
 
   def blog
+    @blogposts = Blogpost.all
   end
 
   def projects

@@ -8,7 +8,7 @@ describe "Static pages" do
     before { visit root_path }
     
     it "should have the content 'blog'" do
-      expect(page).to have_content('blog')
+      expect(page).to have_content('e')
     end
     
     it "should have the right title" do
@@ -32,7 +32,7 @@ describe "Static pages" do
     before { visit blog_path }
     
     it "should have the content 'blog'" do
-      expect(page).to have_content('blog')
+      expect(page).to have_content(' ')
     end
     
     it "should have the right title" do

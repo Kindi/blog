@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  resources :static_pages
+  
   root 'static_pages#home'
   match '/about',     to: 'static_pages#about',     via: 'get'
   match '/blog',      to: 'static_pages#blog',      via: 'get'
