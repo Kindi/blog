@@ -6,6 +6,7 @@ gem 'bootstrap-sass'
 gem 'sprockets', '2.11.0'
 gem 'bcrypt'
 gem 'faker'
+gem 'kaminari'
 
 group :development, :test do
   gem 'rspec-rails'

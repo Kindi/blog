@@ -2,13 +2,13 @@
 
 <div>
 		<div class="row main-content">
-			<div class="col-md-6 col-md-offset-3 zone-content">
+			<div class="col-md-8 col-md-offset-2 zone-content">
 				<% @blogposts.each do |blogpost| %> 
 					<div class="published">
 						<%= nice_date blogpost.created_at%>
 					</div>
 					<h1>
-						<%= blogpost.title %>
+						<%= blogpost.title.html_safe %>
 					</h1>
 					<p>
 						<%  blog_list = blogpost_to_list blogpost.content %>
@@ -20,6 +20,8 @@
 					</p>
 					<hr>
 				<% end %>
+				<div class="col-md-offset-4">
+					<%= paginate @blogposts %>
+				<div>
 			</div>
-		</div>
 </div>
