@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+
+  resources :blogposts
   resources :static_pages
   
   root 'static_pages#home'

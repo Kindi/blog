@@ -1,0 +1,30 @@
+<% provide(:title, @blogpost.title) %>
+
+<div>
+		<div class="row main-content">
+			<div class="col-md-8 col-md-offset-2 zone-content">
+					<div class="published">
+						<%= nice_date @blogpost.created_at%>
+					</div>
+					<h1>
+						<%= @blogpost.title.html_safe %>
+					</h1>
+					<p>
+						<%  blog_list = blogpost_to_list @blogpost.content %>
+						<% blog_list.each do |paragraph| %>
+							<p>
+								<%= paragraph.html_safe %>
+							</p>
+						<% end %>
+					</p>
+					<div class="paginator col-md-offset-5 zone-content">
+						<% if Blogpost.exists?(@blogpost.id - 1) %>
+							<%= link_to "Previous|", "#{@blogpost.id - 1}" %>
+						<% end %>
+						<%= link_to " More", blog_path %>
+						<% if Blogpost.exists?(@blogpost.id + 1) %>
+							<%= link_to "| Next", "#{@blogpost.id + 1}"%>
+						<% end %>
+					</div>
+			</div>
+</div>

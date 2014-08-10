@@ -5,8 +5,8 @@
 					<div class="published">
 						<%= nice_date blogpost.created_at%>
 					</div>
-					<h1>
-						<%= blogpost.title.html_safe %>
+					<h1>					
+						<%= link_to blogpost.title.html_safe, "/blogposts/#{blogpost.id}" %>
 					</h1>
 					<p>
 						<%  blog_list = blogpost_to_list blogpost.content %>
@@ -18,9 +18,9 @@
 					</p>
 					<hr>
 				<% end %>
-				<div class="col-md-offset-4">
-					<% paginate @blogposts %>
-				<div>
+				<div class="col-md-offset-5">
+					<%= link_to "More posts", blog_path %>
+				</div>
 			</div>
 </div>
 

@@ -2,26 +2,51 @@
 
 <div>
 		<div class="row main-content">
-			<div class="col-md-8 col-md-offset-2 zone-content">
+			<div class="col-md-6 col-md-offset-1 zone-content">
 				<% @blogposts.each do |blogpost| %> 
 					<div class="published">
 						<%= nice_date blogpost.created_at%>
 					</div>
 					<h1>
-						<%= blogpost.title.html_safe %>
+						<%= link_to blogpost.title.html_safe, "/blogposts/#{blogpost.id}"   %>
 					</h1>
 					<p>
 						<%  blog_list = blogpost_to_list blogpost.content %>
 						<% blog_list.each do |paragraph| %>
 							<p>
-								<%= paragraph.html_safe %>
+								<%=paragraph.html_safe[0,300]+" ..." %>
+								<br><br>
+								<%= link_to "Read more", "/blogposts/#{blogpost.id}" %>
 							</p>
 						<% end %>
 					</p>
 					<hr>
 				<% end %>
-				<div class="col-md-offset-4">
-					<%= paginate @blogposts %>
-				<div>
 			</div>
+			<aside id="aside-right" class="aside-column col-md-offset-1 col-md-3">
+				
+				<article class="widget-search-form widget">
+					<header>
+						<h1>Search</h1>
+					</header>
+					<%= form_tag( blog_path, method: "get", class: "search-form") do %>
+							<fieldset>
+							<%= text_field_tag :search, params[:search], id: "q" %>
+							<button type="submit">Go</button>
+							</fieldset>
+					<% end %>
+				</article>
+				
+				<article class="widget-blogarchives widget">
+					<header>
+						<h1>Archive</h1>
+					</header>
+					<ul>
+						<li>Month 1</li>
+						<li>Month 2</li>
+						<li>Month 3</li>
+						<li>Month 4</li>
+					</ul>
+				</article>
+			</aside>	
 </div>
